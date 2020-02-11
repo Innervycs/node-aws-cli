@@ -8,8 +8,6 @@ RUN apt-get update && apt-get install -y \
     zip \
     jq
 RUN easy_install3 pip
-RUN pip install --upgrade --user awsebcli awscli
-
-ENV PATH "${PATH}:/root/.local/bin"
+RUN pip install --upgrade awsebcli awscli
 
 CMD ["node"]
