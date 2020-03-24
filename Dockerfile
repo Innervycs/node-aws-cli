@@ -1,4 +1,3 @@
-FROM docker:latest
 FROM node:current
 
 ENV LANG C.UTF-8
