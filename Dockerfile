@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
     python3-setuptools \
     python3-dev \
     zip \
-    jq
+    jq \
+    openssh-client
 RUN easy_install3 pip
 RUN pip install --upgrade awsebcli awscli
 
