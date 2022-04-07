@@ -1,3 +1,3 @@
-# node-aws-cli
+# Node & AWS CLI
 
-docker image for node 8 + aws-cli.
+Docker image from Node LTS + AWS CLI
