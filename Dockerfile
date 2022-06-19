@@ -1,14 +1,14 @@
-FROM node:lts
+FROM node:14
 
 ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
-    python3-setuptools \
-    python3-dev \
-    zip \
-    jq
-RUN easy_install3 pip
-RUN pip install --upgrade --user awsebcli awscli
+        python3 python3-pip \
+        python3-setuptools groff less \
+    && pip3 install --upgrade pip \
+    && apt-get clean
+
+RUN pip3 --no-cache-dir install --upgrade --user awsebcli awscli
 
 ENV PATH "${PATH}:/root/.local/bin"
 
