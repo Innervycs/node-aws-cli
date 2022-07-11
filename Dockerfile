@@ -4,6 +4,7 @@ ENV LANG C.UTF-8
 
 RUN apt-get update && apt-get install -y \
         python3 python3-pip \
+        zip -y \
         python3-setuptools groff less \
     && pip3 install --upgrade pip \
     && apt-get clean
